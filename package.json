@@ -1,11 +1,11 @@
 {
   "name": "api_db",
   "version": "0.0.1",
-  "description": "API for jsnold database",
+  "description": "API for jsonld database",
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "src/index.js",
+  "main": "api_db/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
