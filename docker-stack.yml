@@ -1,0 +1,15 @@
+# Your Fastify App
+  app:
+    build:
+      context: .
+      
+    ports:
+      - "13001:3000"
+    environment:
+      # Use the 'mongodb' service name as the hostname
+      - MONGODB_URL=mongodb://mongodb:27017/mydatabase
+      - NODE_ENV=production
+      - DATABASE_URI=mongodb://tactik8:Temp4now@192.168.2.243:27017/?authMechanism=DEFAULT
+      - DATABASE_ID=n8n
+      - TENANT_ID=test
+    

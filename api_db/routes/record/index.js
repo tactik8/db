@@ -7,9 +7,9 @@ import * as helpers from "jsonld_helpers"
 let URI = 'mongodb://tactik8:Temp4now@192.168.2.243:27017/?authMechanism=DEFAULT'
 
 let db = new mongodb.MongoDB()
-db.uri = URI
-db.databaseID = "n8n"
-db.tenantID = "test"
+db.uri = process.env.DATABASE_URI || URI
+db.databaseID = process.env.DATABASE_ID || "n8n"
+db.tenantID = process.env.TENANT_ID || "test"
 db.init()
 
 
