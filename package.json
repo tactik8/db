@@ -7,7 +7,9 @@
   "type": "module",
   "main": "api_db/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fastify start -l info -a 0.0.0.0 app.js",
+    "dev": "fastify start -w -l info -P -a 0.0.0.0 app.js"
   },
   "dependencies": {
     "@fastify/autoload": "^6.3.1",
